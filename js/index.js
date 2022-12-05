@@ -129,36 +129,52 @@ window.addEventListener("keydown", (e) => {
   turnSound.play();
   switch (e.key) {
     case "ArrowUp":
-      inputDir.x = 0;
-      inputDir.y = -1;
+      if (inputDir.y != 1){
+        inputDir.x = 0;
+        inputDir.y = -1;
+      }
       break;
     case "ArrowDown":
-      inputDir.x = 0;
-      inputDir.y = 1;
+      if (inputDir.y != -1){
+        inputDir.x = 0;
+        inputDir.y = 1;
+      }
       break;
     case "ArrowLeft":
-      inputDir.x = -1;
-      inputDir.y = 0;
+      if (inputDir.x != 1){
+        inputDir.x = -1;
+        inputDir.y = 0;
+      }
       break;
     case "ArrowRight":
-      inputDir.x = 1;
-      inputDir.y = 0;
+      if (inputDir.x != -1){
+        inputDir.x = 1;
+        inputDir.y = 0;
+      }
       break;
     case "w":
-      inputDir.x = 0;
-      inputDir.y = -1;
-      break;
-    case "a":
-      inputDir.x = -1;
-      inputDir.y = 0;
+      if (inputDir.y != 1){
+        inputDir.x = 0;
+        inputDir.y = -1;
+      }
       break;
     case "s":
-      inputDir.x = 0;
-      inputDir.y = 1;
+      if (inputDir.y != -1){
+        inputDir.x = 0;
+        inputDir.y = 1;
+      }
+      break;
+    case "a":
+      if (inputDir.x != 1){
+        inputDir.x = -1;
+        inputDir.y = 0;
+      }
       break;
     case "d":
-      inputDir.x = 1;
-      inputDir.y = 0;
+      if (inputDir.x != -1){
+        inputDir.x = 1;
+        inputDir.y = 0;
+      }
       break;
   }
 });
