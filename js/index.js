@@ -1,10 +1,10 @@
 //Constants and Variables
 
 let inputDir = { x: 0, y: 0 };
-const eatSound = new Audio("/sounds/eat.mp3");
-const turnSound = new Audio("/sounds/turn.mp3");
-const gameOverSound = new Audio("/sounds/game_over.mp3");
-const bgSound = new Audio("/sounds/bgsound.mp3");
+const eatSound = new Audio("sounds/eat.mp3");
+const turnSound = new Audio("sounds/turn.mp3");
+const gameOverSound = new Audio("sounds/game_over.mp3");
+const bgSound = new Audio("sounds/bgsound.mp3");
 const board = document.querySelector(".board");
 const scoretag = document.querySelector("#score");
 const hiscoretag = document.querySelector("#hiscoretag");
